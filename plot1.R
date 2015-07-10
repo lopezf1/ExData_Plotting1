@@ -17,6 +17,7 @@ df2$Global_active_power <- as.numeric(df2$Global_active_power)
 
 # Create histogram and copy plot to PNG device.
 
+par(mfrow=c(1,1))
 hist(df2$Global_active_power, col="red",
      xlab="Global Active Power (kilowatts)", main="Global Active Power")
 dev.copy(png, file="plot1.png", width=480, height=480)
