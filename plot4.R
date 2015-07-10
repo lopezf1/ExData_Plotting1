@@ -26,6 +26,9 @@ df2$Voltage <- as.numeric(df2$Voltage)
 df2$Sub_metering_1 <- as.numeric(df2$Sub_metering_1)
 df2$Sub_metering_2 <- as.numeric(df2$Sub_metering_2)
 
+# Create plot and copy plot to PNG device.  Did not send to screen 
+# devise because dev.copy "cut off" part of the legend.
+
 png("plot4.png", width=480, height=480)
 par(mfrow=c(2,2), mar=c(4,4,2,1))
 with(df2, {
