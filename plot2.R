@@ -24,6 +24,6 @@ df2$DateTime <- strptime(df2$DateTime, "%d/%m/%Y %H:%M:%S")
 # Create plot and copy plot to PNG device.
 
 with(df2, plot(DateTime, Global_active_power, type="l", xlab="", 
-               ylab="Global Active Power (kilowatts"))
+               ylab="Global Active Power (kilowatts)"))
 dev.copy(png, file="plot2.png", width=480, height=480)
 dev.off()
